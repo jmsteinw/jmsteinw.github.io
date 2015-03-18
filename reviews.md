@@ -33,7 +33,7 @@ If you want to understand all of the IT jargon necessary in big data, this is a 
 
 <img src = "/images/Signal_Book.jpg" align = right width = 128 height = 168>
 
-You aren't going to find many technical details here, but Nate Silver has done so many interesting things with data (especially in baseball and politics) it's more than worth getting some insight into how he thinks. There are some great examples of data being used effectively here. I especially appreciate his compliments towards the atmospheric science and meteorology community on improved weather forecast accuracy! I didn't agree entirely, however, with his chapter regarding global warming, even though he seemed to take great pains to be impartial. That being said, the book was truly fascinating and helped increased my desire to become a data scientist.
+You aren't going to find many technical details here, but Nate Silver has done so many interesting things with data (especially in baseball and politics) it's more than worth getting some insight into how he thinks. There are some great examples of data being used effectively here. I especially appreciate his compliments towards the atmospheric science and meteorology community on improved weather forecast accuracy! I didn't agree entirely, however, with his chapter regarding global warming, even though he seemed to take great pains to be impartial. That being said, the book was truly fascinating and helped increase my desire to become a data scientist.
 
 ###Data Science for Business by [Foster Provost and Tom Fawcett](http://www.amazon.com/Data-Science-Business-data-analytic-thinking-ebook/dp/B00E6EQ3X4/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1425869759&sr=1-1&keywords=data+science+for+business) <font color = 'orange'>(moderate)</font>
 
