@@ -18,9 +18,9 @@ It would also be nice to see if different cities have different skills they like
 
 Data like this isn't going to be easily accessible through a .csv or database. Sometimes, you are going to have to get it yourself. That may require [web scraping](http://en.wikipedia.org/wiki/Web_scraping), which automates the process of collecting data from websites. I've always thought this sounded very cool, but I didn't know how to do it. 
 
-Luckily, Greg Reda at Datascope Analytics had a great blog post about web scraping that helped me complete this project (see it [here](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)). He did a great job! I'm not going to go into as much detail about web scraping as he did in this notebook, so I would recommend going to his blog post if you want to learn the basics.
+Luckily, Greg Reda at Datascope Analytics had a great blog post about web scraping that helped me complete this project (see it [here](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)). He did a great job! I'm not going to go into as much detail about web scraping as he did in this post, so I would recommend going to his blog post if you want to learn the basics.
 
-So, in this notebook, I am going to scrape job postings from Indeed.com for data science jobs and see which skills employers want the most (Python or R? Are they interested in Spark yet? How dominant are NoSQL databases? Are they using proprietary software like SAS or are companies preferring open source now?) To make it even better, I will create the program so that I can have a detailed breakdown by city. 
+So, in this post, I am going to scrape job postings from Indeed.com for data science jobs and see which skills employers want the most (Python or R? Are they interested in Spark yet? How dominant are NoSQL databases? Are they using proprietary software like SAS or are companies preferring open source now?) To make it even better, I will create the program so that I can have a detailed breakdown by city. 
 
 ##Program Setup
 
@@ -36,13 +36,13 @@ The basic workflow of the program will be:
 
 We will create two functions. The first will scape an individual job posting for the HTML, clean it up to get the words only, then output the final list of words. The second will manage which URLs to access via the job postings Indeed's website links to. 
 
-In this notebook, we will use the urllib2 library to connect to the websites, the BeautifulSoup library to collect all of the HTML, the re library for parsing the words and filtering out other markup based on regular expressions, and pandas to manage and plot the final results. 
+In this post, we will use the urllib2 library to connect to the websites, the BeautifulSoup library to collect all of the HTML, the re library for parsing the words and filtering out other markup based on regular expressions, and pandas to manage and plot the final results. 
 
 ## The First Function: Cleaning a Website
 
 This function will be called every time we access a new job posting. Its input is a URL for a website, while the output will be a final set of words collected from that website. 
 
-In this notebook, I am going to import all of the libraries necessary first. 
+In this post, I am going to import all of the libraries necessary first. 
 
 ```python
 from bs4 import BeautifulSoup # For HTML parsing
@@ -117,7 +117,7 @@ def text_cleaner(website):
 ```
 As you can see in the code above, a lot of cleaning for the raw html is necessary to get the final terms we are looking for. It extracts the relevant portions of the html, gets the text, removes blank lines and line endings, removes unicode, and filters with regular expressions to include only words. To see what the final result looks like, let's try calling this function on a sample job posting. The one I am using is a job posting for a [Data Scientist at Indeed itself](http://www.indeed.com/viewjob?jk=5505e59f8e5a32a4&q=%22data+scientist%22&tk=19ftfgsmj19ti0l3&from=web&advn=1855944161169178&sjdu=QwrRXKrqZ3CNX5W-O9jEvWC1RT2wMYkGnZrqGdrncbKqQ7uwTLXzT1_ME9WQ4M-7om7mrHAlvyJT8cA_14IV5w&pub=pub-indeed)!
 
-If you are reading the notebook interactively, the example job posting may have disappeared so you can try your own to see how the function works. 
+If you are reading the IPython Notebook interactively, the example job posting may have disappeared so you can try your own to see how the function works. 
 
 ```python
 sample = text_cleaner('http://www.indeed.com/viewjob?jk=5505e59f8e5a32a4&q=%22data+scientist%22&tk=19ftfgsmj19ti0l3&from=web&advn=1855944161169178&sjdu=QwrRXKrqZ3CNX5W-O9jEvWC1RT2wMYkGnZrqGdrncbKqQ7uwTLXzT1_ME9WQ4M-7om7mrHAlvyJT8cA_14IV5w&pub=pub-indeed')
