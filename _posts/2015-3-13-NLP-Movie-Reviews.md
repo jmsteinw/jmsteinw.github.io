@@ -15,7 +15,7 @@ Originally, I was going to try out Word2Vec and train it on unlabeled reviews, b
 
 I decided to take this basic inspiration and try a few various classifiers to see what I could come up with. The highest my score received was 6th place back in December of 2014, but then people started using [ensemble methods](http://sebastianraschka.com/Articles/2014_ensemble_classifier.html) to combine various models together and get a perfect score after a lot of fine tuning with the parameters of the ensemble weights. 
 
-Hopefully, this notebook will help you understand some basic NLP (Natural Language Processing) techniques, along with some tips on using [scikit-learn](http://scikit-learn.org/stable/) to make your classification models.
+Hopefully, this post will help you understand some basic NLP (Natural Language Processing) techniques, along with some tips on using [scikit-learn](http://scikit-learn.org/stable/) to make your classification models.
 
 ## Cleaning the Reviews
 
@@ -46,7 +46,7 @@ def review_to_wordlist(review):
     # Return a list of words
     return(words)
 ```
-Great! Now it is time to go ahead and load our data in. For this, pandas is definitely the library of choice. If you want to follow along with a downloaded version of the notebook yourself, make sure you obtain the [data](http://www.kaggle.com/c/word2vec-nlp-tutorial/data) from Kaggle. You will need a Kaggle account in order to access it.
+Great! Now it is time to go ahead and load our data in. For this, pandas is definitely the library of choice. If you want to follow along with a downloaded version of the attached IPython notebook yourself, make sure you obtain the [data](http://www.kaggle.com/c/word2vec-nlp-tutorial/data) from Kaggle. You will need a Kaggle account in order to access it.
 
 ```python
 import pandas as pd
@@ -296,7 +296,7 @@ Submitting the SGD result (using the linear SVM with modified Huber loss), I rec
 
 ## Ideas for Improvement and Summary
 
-In this notebook, we examined a text classification problem and cleaned unstructured review data. Next, we created a vector of features using TF-IDF normalization on a Bag of Words. We then trained these features on three different classifiers, some of which were optimized using 20-fold cross-validation, and made a submission to a Kaggle competition.
+In this post, we examined a text classification problem and cleaned unstructured review data. Next, we created a vector of features using TF-IDF normalization on a Bag of Words. We then trained these features on three different classifiers, some of which were optimized using 20-fold cross-validation, and made a submission to a Kaggle competition.
 
 Possible ideas for improvement:
 
