@@ -57,7 +57,7 @@ If you want to see everything R can do for a data scientist (well, almost everyt
 
 <img src = "/images/DAT_Book.jpg" align = right width = 128 height = 168>
 
-I decided to give this book a try because the website he is associated with (datasciencecentral.com) use to be one of my favorites for news and information about data science. However, as a book, it seems poorly organized. What Dr. Granville basically did is collate a selection of articles he had already written on the website and put them together in one place. Granville also seems to have his own way of doing things that tend to be different from most practitioners, so keep that in mind as you read. My recommendation is to just stick to the website if you are interested in what he has to say.
+I decided to give this book a try because the website he is associated with (datasciencecentral.com) used to be one of my favorites for news and information about data science. However, as a book, it seems poorly organized. What Dr. Granville basically did is collate a selection of articles he had already written on the website and put them together in one place. Granville also seems to have his own way of doing things that tend to be different from most practitioners, so keep that in mind as you read. My recommendation is to just stick to the website if you are interested in what he has to say.
 
 ###Java: A Beginner's Guide (Sixth Edition) by [Herbert Schildt](http://www.amazon.com/Java-Beginners-Guide-Herbert-Schildt/dp/0071809252/ref=sr_1_1?s=books&ie=UTF8&qid=1425870089&sr=1-1&keywords=java%3A+a+beginner%27s+guide) <font color = 'red'>(difficult)</font>
 
