@@ -27,7 +27,7 @@ Basically, the key part of deep learning is finding features that can be used fo
 
 As a way of practicing this, we are going to use some Deep Learning on the MNIST dataset of numbers to see if we can get a low error rate. I couldn't decide which neural network library to use at first, since scikit-learn doesn't really have any. I became inspired by this post [here](http://www.pyimagesearch.com/2014/09/22/getting-started-deep-learning-python/) from Dr. Adrian Rosebrock. He used the library [nolearn](https://pythonhosted.org/nolearn/), which we will also be using. 
 
-I just found out while writing this that the dbn class of nolearn is being removed entirely for the new version 0.6 and that the author suggests switching to [lasagne](https://github.com/dnouri/nolearn/blob/master/nolearn/lasagne.py). If you are going to follow along with this notebook, make sure you have a version prior to nolearn 0.6. 
+I just found out while writing this that the dbn class of nolearn is being removed entirely for the new version 0.6 and that the author suggests switching to [lasagne](https://github.com/dnouri/nolearn/blob/master/nolearn/lasagne.py). If you are going to follow along with the IPython Notebook, make sure you have a version prior to nolearn 0.6. 
 
 ## Processing the Images
 
@@ -414,7 +414,7 @@ Once again, we can see that our accuracy went up to 98.54%, and the dropout regu
 
 ## Ideas for Improvement and Summary
 
-In this notebook, we examined a somewhat simplistic application of deep learning to classify images of numbers from the MNIST dataset. We tried several techniques to improve the performance of our classifier, such as augmentation of the training set with our own artificial examples, changing the learning rate, and adding additional hidden units. We also explored dropout to prevent overfitting of the network. In the end, we were able to get decent performance out of our Deep Belief Network, improving our initial accuracy from 97.95% to 98.54% and increasing the f1 score for most of our classification categories. 
+In this post, we examined a somewhat simplistic application of deep learning to classify images of numbers from the MNIST dataset. We tried several techniques to improve the performance of our classifier, such as augmentation of the training set with our own artificial examples, changing the learning rate, and adding additional hidden units. We also explored dropout to prevent overfitting of the network. In the end, we were able to get decent performance out of our Deep Belief Network, improving our initial accuracy from 97.95% to 98.54% and increasing the f1 score for most of our classification categories. 
 
 Possible ideas for improvement:
 
