@@ -12,7 +12,7 @@ Well, that's what this project will attempt to do. Granted, the data scientists 
 
 To complete this project, we need some data about flights. Fortunately, the government keeps such a resource available that we are going to examine in this project. 
 
-Similar to the project about faculty salaries, this notebook will be split into two major parts: exploratory data analysis and feature engineering in R, with regression model implementation in Python. 
+Similar to the project about faculty salaries, this post will be split into two major parts: exploratory data analysis and feature engineering in R, with regression model implementation in Python. 
 
 ##Getting the Data
 
@@ -579,13 +579,13 @@ We will need to drop the CRS_DEP_TIME/CRS_ARR_TIME features, as these times are 
 numericDB <- select(flightsDB, -c(CRS_DEP_TIME, CRS_ARR_TIME))
 write.csv(numericDB, 'FinalFlightsNumeric.csv')
 ```
-We are now finished with R. In the next part of the notebook, we will create an algorithm that will predict how late (or early) our flight will be using Python. 
+We are now finished with R. In the next part of the post, we will create an algorithm that will predict how late (or early) our flight will be using Python. 
 
 ##Part 2: Regression Model to Predict Flight Delays
 
 Now that we have explored the data some, let's create our regression model to predict how late a flight is going to be. First, load two datasets: the airport text file that has the codes for each of the airports and the numeric dataset we just created in R. 
 
-__WARNING__: Make sure you have at least __4 GB__ of memory available or your computer might have some problems with this if you are interacting with the notebook. This is not a trivial number of training examples! I would also recommend restarting the kernel and running the cells in Part 2 only to free up some memory.
+__WARNING__: Make sure you have at least __4 GB__ of memory available or your computer might have some problems with this if you are interacting with the IPython Notebook. This is not a trivial number of training examples! I would also recommend restarting the kernel and running the cells in Part 2 only to free up some memory.
 
 If you want to try following along, you could get away with randomly sampling a smaller subset of the data, but your model performance may be different given missing training examples for certain flights. 
 
@@ -939,7 +939,7 @@ The function will allow the user to enter all of the information about their fli
 
 None of these inputs are data leakage, as the user will know this information well in advance of their flight. That way, the regression model can be used at any point in time. 
 
-First, similar to the R program in the first part of the notebook, we will need a function that can automatically find the airport codes for our origin and destination airports. The function will take the codes found in our feature set corresponding to a particular city and calculate which airport has the largest number of flights. Let's create that first.
+First, similar to the R program in the first part of the post, we will need a function that can automatically find the airport codes for our origin and destination airports. The function will take the codes found in our feature set corresponding to a particular city and calculate which airport has the largest number of flights. Let's create that first.
 
 ```python
 def max_num_flights(codes):
@@ -1137,7 +1137,7 @@ It did seem to help some, yes!
 
 ##Ideas for Improvement and Summary
 
-In this notebook, we took data from the Department of Transportation regarding flight on-time performance. We did some feature engineering and made functions in R that allowed us to easily explore the data. Then, we prepared our data for a SGD Regressor model via feature scaling/one-hot encoding and made a function that could predict how late our flight was going to be. This project was a bit more difficult than the faculty salary project because the dataset was much larger, so we had to consider model solutions that would be computationally feasible. 
+In this post, we took data from the Department of Transportation regarding flight on-time performance. We did some feature engineering and made functions in R that allowed us to easily explore the data. Then, we prepared our data for a SGD Regressor model via feature scaling/one-hot encoding and made a function that could predict how late our flight was going to be. This project was a bit more difficult than the faculty salary project because the dataset was much larger, so we had to consider model solutions that would be computationally feasible. 
 
 Possible ideas for improvement:
 
