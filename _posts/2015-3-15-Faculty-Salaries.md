@@ -546,7 +546,7 @@ head(salaryDB)
 ```
 
 
-To help prepare us for the second part of this notebook (the machine learning section), we will need to create a second dataframe that only has numbers as inputs. 
+To help prepare us for the second part of this post (the machine learning section), we will need to create a second dataframe that only has numbers as inputs. 
 
 Let's create that now, along with some renaming of the Minority Code feature.
 
@@ -775,7 +775,7 @@ print(deptPlot)
 
 As you can see in the code, FIN = Finance, COMP = Computer Science, METEO = Meteorology, STAT = Statistics, and ENG = English. My current field, Meteorology, falls somewhere in between Computer Science and Statistics (the two main branches of Data Science). Finance sure pays a lot, while English not quite as much. 
 
-Our last step for finishing with R is to output our final numeric dataframe and save it as a .csv, where Python will take over for the machine learning portion of this notebook. We are going to save two different dataframes. The first will be our numeric frame, while the second will be a lookup table we can create easily for Python. This will come in handy later when we implement our machine learning algorithm. 
+Our last step for finishing with R is to output our final numeric dataframe and save it as a .csv, where Python will take over for the machine learning portion of this post. We are going to save two different dataframes. The first will be our numeric frame, while the second will be a lookup table we can create easily for Python. This will come in handy later when we implement our machine learning algorithm. 
 
 ```r
 %%R
@@ -791,7 +791,7 @@ write.csv(numericDB, 'FinalSalaryFrame.csv') # save our numeric frame
 
 We have obtained an external data source, cleaned it up, transformed the data, added new features, and did some exploration of the data. Believe it or not, this work actually ends up taking most of a Data Scientist's time! It is very important, as good features make machine learning algorithms work far better than which model you end up choosing, so it is a step that is worth the time investment. 
 
-We will now start Part 2 of this notebook: how to take this new dataset and make a predictive model out of it that we can actually use. While this work could be done in R, I personally think Python has better Machine Learning capabilities and can be more easily integrated into existing code than R can.
+We will now start Part 2 of this post: how to take this new dataset and make a predictive model out of it that we can actually use. While this work could be done in R, I personally think Python has better Machine Learning capabilities and can be more easily integrated into existing code than R can.
 
 # Part 2: Regression Model to Predict Salaries at Texas A&M
 
@@ -1270,13 +1270,13 @@ The department you chose was: INTERNATIONAL STUDIE
 Your predicted annual salary is: 60344.33
 ```
 
-Our predicted salary is less than in the Meteorology department, which we would expect. Feel free to try others in the notebook if you are following along.
+Our predicted salary is less than in the Meteorology department, which we would expect. Feel free to try others in the IPython Notebook if you are following along.
 
 I found through trial and error that the predictions tend to be less accurate for younger professors (at least comparing to the examples in the database) than for older, more established ones. This is because there are fewer young professors the model can train on, so you have to treat these salary predictions more skeptically. 
 
 ##Ideas for Improvement and Summary
 
-In this notebook, we took an interesting external dataset and explored it in detail. A fair amount of work was necessary to engineer our features, but we were able to use them afterwards for exploratory data analysis purposes in R. We shaped the data using plyr and visualized it using ggplot2. 
+In this post, we took an interesting external dataset and explored it in detail. A fair amount of work was necessary to engineer our features, but we were able to use them afterwards for exploratory data analysis purposes in R. We shaped the data using plyr and visualized it using ggplot2. 
 
 Once our EDA was complete, we built a regression model for predicting salaries and tried a few options. Then, we wrote a function to implement the model in an easy way. 
 
