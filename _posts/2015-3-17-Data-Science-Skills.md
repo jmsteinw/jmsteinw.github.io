@@ -71,7 +71,7 @@ def text_cleaner(website):
     soup_obj = BeautifulSoup(site) # Get the html from the site
     
     for script in soup_obj(["script", "style"]):
-        script.extract() # Only need these two elements from the BS4 object
+        script.extract() # Remove these two elements from the BS4 object
     
     
 
@@ -84,10 +84,13 @@ def text_cleaner(website):
         
         
     chunks = (phrase.strip() for line in lines for phrase in line.split("  ")) # break multi-headlines into a line each
-        
+    
+    def chunk_space(chunk):
+        chunk_out = chunk + ' ' # Need to fix spacing issue
+        return chunk_out  
         
     
-    text = ''.join(chunk for chunk in chunks if chunk).encode('utf-8') # Get rid of all blank lines and ends of line
+    text = ''.join(chunk_space(chunk) for chunk in chunks if chunk).encode('utf-8') # Get rid of all blank lines and ends of line
         
         
     # Now clean out all of the unicode junk (this line works great!!!)
@@ -126,26 +129,26 @@ sample[:20] # Just show the first 20 words
 
 
 ```python
-    ['lease',
-     'serving',
-     'languageshas',
-     'api',
-     'indeed',
-     'competitive',
-     'month',
-     'applying.about',
-     'scientist',
-     'frequency',
-     'reviewsindeed',
-     'human',
-     'keywords',
-     'follow',
-     'alt',
-     'label',
-     'internetbenefits',
-     'inwhat',
-     'style',
-     'retirement']
+['professionally.',
+ 'code',
+ 'cj',
+ 'indeed',
+ 'competitive',
+ 'month',
+ 'label',
+ 'scientist',
+ 'frequency',
+ 'per',
+ 'human',
+ 'keywords',
+ 'follow',
+ 'alt',
+ 'viewthroughconversion',
+ 'find',
+ 'access',
+ 'style',
+ 'retirement',
+ 'candidate']
 ```
 
 
