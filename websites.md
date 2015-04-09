@@ -60,10 +60,10 @@ Even though there isn't very much conversation on the site yet, DataTau is my fa
 
 Run by Vincent Granville, this site has a more BI (business intelligence) type of feel. You will see articles about Hadoop, or how to use data in business effectively. I don't like it as much as DataTau (which seems more geared towards the machine learning/hacker community) but if you come from a BI background this may be a better fit for you.
 
-###[Forbes: Data-Driven](forbes.com/data-driven/)
+###[Forbes: Data-Driven](http://forbes.com/data-driven/)
 
 For the data scientist more focused on business (such as managers or quantitative MBAs) this site is probably closer to what you are looking for. Not very technical, but it does offer some basic news on companies primarily using data. 
 
-###[FiveThirtyEight](fivethirtyeight.com)
+###[FiveThirtyEight](http://fivethirtyeight.com)
 
 The reincarnated version of Nate Silver's website (author of one of my favorite books, "The Signal and The Noise"). All of the articles here involve news with a data-driven focus on them. If you have any interest in advanced data analysis done in sports, politics, economics, science, or other news of the day, this is a great place to go.
