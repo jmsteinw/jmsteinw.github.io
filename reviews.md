@@ -9,13 +9,22 @@ In my quest to further my knowledge of Data Science, I have read several books. 
 
 
 ###Currently reading: 
+
+###Advanced Analytics with Spark by [Sandy Ryza, Uri Laserson, Sean Owen, and Josh Wills](http://www.amazon.com/Advanced-Analytics-Spark-Patterns-Learning/dp/1491912766/ref=sr_1_1?ie=UTF8&qid=1433013688&sr=8-1&keywords=advanced+analytics+with+spark) <font color = 'orange'>(moderate)</font>
+
+<img src = "/images/AA_spark.gif" align = right>
+
+This book comes from the top data scientists at Cloudera and shows you how to use Spark for typical data science applications. Although Spark is available to use with a Python library (PySpark), the authors prefer to demonstrate the book in Scala for the most part, since Spark is written in this. So far, the book is excellent, allowing you to learn both Spark and Scala at the same time! There are some really great examples of how to use Spark properly in here. I have learned more about Spark so far reading just the first few chapters of the book than I have in my own study from the official Spark docs or several local Meetups I have been to. A little surprising, the book assumes very limited prior knowledge of machine learning, so you may be able to skip some of the material explaining how various machine learning algorithms work. Regardless, even though the book seems a tad thin, it really is incredibly useful. One caveat, however, is that the book was written with Spark 1.2 in mind, so the newest major changes (such as data frames from 1.3) are not discussed. That being said, if you plan to use Spark on any of your projects, read this first. 
+
+###Already read:
+
+
 ###Hadoop: The Definitive Guide (3rd edition) by [Tom White](http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1449311520) <font color = 'orange'>(moderate)</font>
 
 <img src = "/images/Hadoop_book.jpg" align = right>
 
-The 4th edition is actually supposed to come out [next month](https://www.safaribooksonline.com/library/view/hadoop-the-definitive/9781491901687/pr03.html#id917668) and includes Spark (which the 3rd edition does not, sadly, because Spark hadn't been released yet). The new edition will also talk exclusively about Hadoop 2. So far the book is explaining MapReduce in great detail, including a lot of Java code samples. If you want to understand Hadoop well, I would recommend the book based on what I have read so far, but wait until April of this year (2015) to get the new version so you can understand Spark better as well. 
+This review is for the older 3rd edition of the book. The newer, [4th edition](http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1491901632/ref=sr_1_1?ie=UTF8&qid=1433014408&sr=8-1&keywords=hadoop+the+definitive+guide+4th+edition) includes Spark (which the 3rd edition does not, sadly, because Spark hadn't been released yet) along with several other updates. In my opinion, the book provides a lot of great case examples for when the HDFS should be used and how to optimize it properly. Because of the very fast pace of development in the Hadoop ecosystem, a lot of the 3rd edition now feels behind (hence the new 4th edition). That being said, the chapters on Pig and Hive (which aren't going anywhere) were very helpful, along with information about actual use cases at several companies such as Facebook, Infochimps, and last.fm. The book is probably a better fit for a data engineer than a data scientist, but data scientists still need to understand some of the Hadoop system's strengths and weaknesses. If you have some question about almost anything involving Hadoop, go here first if Google/StackOverflow doesn't get you an answer.  
 
-###Already read:
 ###Predictive Analytics by [Eric Siegel](http://www.amazon.com/Predictive-Analytics-Power-Predict-Click-ebook/dp/B00BGC2WGQ) <font color = 'green'>(beginner)</font> 
 
 <img src = "/images/PredAn_Book.jpg" align = right width = 128 height = 168>
