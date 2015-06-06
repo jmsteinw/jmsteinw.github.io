@@ -429,7 +429,7 @@ subset(salaryDB, is.na(EEOMinorityCode))
 13354            Texas A&M University          MCINNES     KEVIN
 14628            Texas A&M University             RICE     SARAH
 14773            Texas A&M University           ROGERS   WILLIAM
-15900            Texas A&M University            USTER     HALIT
+15900            Texas A&M University            SMITH      JOHN
 15991            Texas A&M University VIEIRA-DE-CASTRO      LUIS
 16567            Texas A&M University            YARAK     LARRY
             ShortTitleDesc                 Dept EEOMinorityCode Sex YearsWorked
