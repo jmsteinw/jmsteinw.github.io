@@ -5,7 +5,7 @@ permalink: /about/
 
 <center><img src = "/images/Git_photo.jpg"></center>
 
-I am currently a Ph.D. student at [Texas A&M University in Atmospheric Science](http://atmo.tamu.edu/). My research focuses on numerical climate and weather prediction. More specifically, I am investigating the performance of regional and global coupled models in how they resolve the interaction between the ocean and the atmosphere at high resolutions. 
+I am currently a Ph.D. Candidate at [Texas A&M University in Atmospheric Science](http://atmo.tamu.edu/). My research focuses on numerical climate and weather prediction. More specifically, I am investigating the performance of regional and global coupled models in how they resolve the interaction between the ocean and the atmosphere at high resolutions. 
 
  In the summer of 2014, I was a Data Science Intern at [HMS](http://hms.com/), a healthcare company focused on reviewing claims data. My focus during the internship was on finding fraudulent healthcare providers. To do this, I used automated SQL queries that would look for suspicious patterns and run them in combination with R and the teradataR library for analysis and visualization. Some of the patterns I investigated included:
 
