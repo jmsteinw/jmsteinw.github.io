@@ -8,15 +8,23 @@ In my quest to further my knowledge of Data Science, I have read several books. 
 
 
 
-###Currently reading: 
+###Currently reading:
+
+###Mining the Social Web (2nd edition) by [Matthew A. Russell](http://www.amazon.com/Mining-Social-Web-Facebook-LinkedIn/dp/1449367615) <font color = 'orange'>(moderate)</font>
+
+<img src = "/images/Mining_Soc_Web.gif" align = right>
+
+The book focuses on how to use social media (along with the unstructured data inside of it) to gain insights that can help your business or just answer interesting sociological questions. So far, the book has focused on a great introduction regarding how to use Facebook, Twitter, and LinkedIn's APIs in Python (the whole book is Python centered). The author does warn that you should not expect any highly advanced techniques in the book, just the basics necessary to get started. Hopefully the book will delve a little deeper later on into machine learning applications and recommendation systems. It's just enough to get your feet wet so that you can start answering your own questions utilizing the power of social media.   
+
+
+###Already read:
 
 ###Advanced Analytics with Spark by [Sandy Ryza, Uri Laserson, Sean Owen, and Josh Wills](http://www.amazon.com/Advanced-Analytics-Spark-Patterns-Learning/dp/1491912766/ref=sr_1_1?ie=UTF8&qid=1433013688&sr=8-1&keywords=advanced+analytics+with+spark) <font color = 'orange'>(moderate)</font>
 
 <img src = "/images/AA_spark.gif" align = right>
 
-This book comes from the top data scientists at Cloudera and shows you how to use Spark for typical data science applications. Although Spark is available to use with a Python library (PySpark), the authors prefer to demonstrate the book in Scala for the most part, since Spark is written in this. So far, the book is excellent, allowing you to learn both Spark and Scala at the same time! There are some really great examples of how to use Spark properly in here. I have learned more about Spark so far reading just the first few chapters of the book than I have in my own study from the official Spark docs or several local Meetups I have been to. A little surprising, the book assumes very limited prior knowledge of machine learning, so you may be able to skip some of the material explaining how various machine learning algorithms work. Regardless, even though the book seems a tad thin, it really is incredibly useful. One caveat, however, is that the book was written with Spark 1.2 in mind, so the newest major changes (such as data frames from 1.3) are not discussed. That being said, if you plan to use Spark on any of your projects, read this first. 
+This book comes from the top data scientists at Cloudera and shows you how to use Spark for typical data science applications. Although Spark is available to use with a Python library (PySpark), the authors prefer to demonstrate the book in Scala for the most part, since Spark is written in this. The book is excellent, allowing you to learn both Spark and Scala at the same time! I agree with the authors that you do not need to read every chapter (if you only can read one, Chapter 2 is definitely the best!), as the book is structured across use cases from multiple industries. I have learned more about Spark from this book than I have in my own study from the official Spark docs or several local Meetups I have been to. A little surprising, the book assumes very limited prior knowledge of machine learning, so you may be able to skip some of the material explaining how various machine learning algorithms work. Regardless, even though the book seems a tad thin, it really is incredibly useful. One caveat, however, is that the book was written with Spark 1.2 in mind, so the newest major changes (such as data frames from 1.3) are not discussed. That being said, if you plan to use Spark on any of your projects, read this first. 
 
-###Already read:
 
 
 ###Hadoop: The Definitive Guide (3rd edition) by [Tom White](http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1449311520) <font color = 'orange'>(moderate)</font>
