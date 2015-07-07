@@ -56,10 +56,6 @@ I randomly found this website and it gives a nice overview of how to clean data 
 
 Even though there isn't very much conversation on the site yet, DataTau is my favorite! Simple and clean with no ads (similar to Hacker News), you can always find something interesting to read. From recent publications on machine learning to insightful blog postings, this is a good way to keep up with the latest and greatest in data science. I check it daily for the newest information. Highly recommended for keeping your edge on the newest technology and library releases.
 
-###[Data Science Central](http://www.datasciencecentral.com/)
-
-Run by Vincent Granville, this site has a more BI (business intelligence) type of feel. You will see articles about Hadoop, or how to use data in business effectively. I don't like it as much as DataTau (which seems more geared towards the machine learning/hacker community) but if you come from a BI background this may be a better fit for you.
-
 ###[Forbes: Data-Driven](http://forbes.com/data-driven/)
 
 For the data scientist more focused on business (such as managers or quantitative MBAs) this site is probably closer to what you are looking for. Not very technical, but it does offer some basic news on companies primarily using data. 
