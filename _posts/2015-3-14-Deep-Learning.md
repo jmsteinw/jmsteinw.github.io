@@ -7,6 +7,8 @@ title: An Introduction to Deep Learning using nolearn
 <img src='/images/Proj3_images/Deep_Learning.jpg', width = 1000, height = 400>
 [Source](http://www.purdue.edu/newsroom/releases/2014/Q1/smartphone-to-become-smarter-with-deep-learning-innovation.html)
 
+**NOTE: If you are having trouble with nolearn working properly, make sure you are using version 0.5b1 available [here](https://pypi.python.org/pypi/nolearn/0.5b1).** Otherwise you may run into problems. 
+
 One of the most well known problems in machine learning regards how to categorize [handwritten numbers](http://en.wikipedia.org/wiki/MNIST_database) automatically. Basically, the idea is that you have 10 different digits (0-9) and you want a computer to be able to correctly identify each number. This would come in handy at the post office, along with many other applications such as identifying address numbers in images. 
 
 Different machine learning experts have worked on this problem for several years trying [a variety of approaches](http://yann.lecun.com/exdb/mnist/). Ultimately, however, the best algorithm for the task of image classification would be an algorithm that can fit features that aren't easily described. This is where neural networks truly shine. 
