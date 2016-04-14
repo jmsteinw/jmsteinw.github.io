@@ -10,22 +10,55 @@ In my quest to further my knowledge of Data Science, I have read several books. 
 
 ### Currently reading:
 
+
+### Programming Scala (2nd edition) by [Dean Wampler & Alex Payne](http://www.amazon.com/Programming-Scala-Scalability-Functional-Objects/dp/1491949856) <font color = 'red'>(difficult)</font>
+
+![](/images/Prog_Scala.gif){:align="right" width="128px" height="168px"}
+
+If you need to know every detail about how Scala is programmed, this is a good book to start with. It's definitely not a book for beginners to programming, and it assumes you are a veteran software developer. However, it does a very thorough introduction to the language and has something for both new and experienced Scala developers alike. Since Spark is written in Scala, it may be good to know how the language works in more detail and how it differs from other similar languages such as Java. 
+
+### Already Read:
+
+### Doing Data Science by [Cathy O'Neill & Rachel Schutt](http://www.amazon.com/Doing-Data-Science-Straight-Frontline/dp/1449358659) <font color = 'green'>(beginner)</font>
+
+![](/images/DDS_Book.gif){:align="right" width="128px" height="168px"}
+
+This book is a great survey of the field. It covers almost every aspect of data science, but it doesn't get into details as much as other books do. This is a great book to start with if you are just getting introduced to data science for the first time. Chapter 8 on recommendation engines was exceptionally good, especially since most books don't discuss them at all or simply gloss over them. The chapters also have information from experts in several domains, including data engineering, data visualization, machine learning at Kaggle, and many more. 
+
+
+### Learning Spark by [Holden Karau, Andy Konwinski, Patrick Wendell & Matei Zaharia](http://www.amazon.com/Learning-Spark-Lightning-Fast-Data-Analysis/dp/1449358624) <font color = 'orange'>(moderate)</font>
+
+![](/images/Learn_Spark.jpg){:align="right" width="128px" height="168px"}
+Written by core developers of Spark (including Matei Zaharia himself), this book is a nice complement to Advanced Analytics with Spark. While the other book focuses on applications for an analytical context, this book focuses more on the internals of Spark itself. This includes how Spark works, useful tips for debugging, available settings to use, performance optimization, and scenarios where Spark may be a good solution. This is a good reference book when Spark has you stuck. Python, Scala, and Java code samples are shown throughout the book, so don't worry about your personal language preference (although the Scala API is probably the one you should end up using eventually). 
+
+
+### Data Science at The Command Line by [Jeroen Janssens](http://www.amazon.com/Data-Science-Command-Line-Time-Tested/dp/1491947853) <font color = 'orange'>(moderate)</font>
+
+![](/images/DSAtCL.png){:align="right" width="128px" height="168px"}
+
+This book has long been on my to-do list after using the author's [data science toolbox](http://datasciencetoolbox.org/). If you know of anyone that uses the command line all the time, this book will show you how to leverage it properly. The book goes through several very useful tools I had no idea were available. The one that especially intersted me was the GNU Parallel tool, which was new to me. With this, you can run command line inputs in parallel very simply utilizing all of the cores available on your machine! The author argues for doing a very large portion of your work on the command line, which I don't necessarily agree is the most practical answer. It will certainly come in handy, however, for data preprocessing. I recommend reading this just to simply broaden your horizons as to what tools are available. You can then pick which command line tools best support your workflow.
+
+### Interactive Data Visualization by [Scott Murray](http://www.amazon.com/Interactive-Data-Visualization-Scott-Murray/dp/1449339735) <font color = 'green'>(beginner)</font>
+
+![](/images/IDVis.jpg){:align="right" width="128px" height="168px"}
+
+Written by design professor Scott Murray, this book is an excellent introduction to d3.js. It's written to be friendly even to people less experienced with programming, such as journalists who want to add d3's capabilities to their articles. There are several great tutorials in here that help explain what d3 is doing and also provide an easy-to-follow high-level introduction to javascript. The author is not a software engineer, however, so some of the syntax he chooses may seem a little different than what a more experienced engineer may have written. By the end of this book, you should have enough knowledge to make your own simple d3 plots. It's not meant to be an advanced book, so for more complicated d3 plots it may be best to look at the [gallery](https://github.com/mbostock/d3/wiki/Gallery) from Mike Bostock, who helped create d3. 
+
+
 ### Mining the Social Web (2nd edition) by [Matthew A. Russell](http://www.amazon.com/Mining-Social-Web-Facebook-LinkedIn/dp/1449367615) <font color = 'orange'>(moderate)</font>
 <!---
 <img src = "/images/Mining_Soc_Web.gif" align = right>
 -->
-![](/images/Mining_Soc_Web.gif){:align="right"}
-The book focuses on how to use social media (along with the unstructured data inside of it) to gain insights that can help your business or just answer interesting sociological questions. So far, the book has focused on a great introduction regarding how to use Facebook, Twitter, and LinkedIn's APIs in Python (the whole book is Python centered). The author does warn that you should not expect any highly advanced techniques in the book, just the basics necessary to get started. Hopefully the book will delve a little deeper later on into machine learning applications and recommendation systems. It's just enough to get your feet wet so that you can start answering your own questions utilizing the power of social media.   
+![](/images/Mining_Soc_Web.gif){:align="right" width="128px" height="168px"}
 
-
-### Already read:
+The book focuses on how to use social media (along with the unstructured data inside of it) to gain insights that can help your business or just answer interesting sociological questions. The book mainly focuses on how to extract data from a variety of social networking sites, such as Facebook, Twitter, LinkedIn (although LinkedIn, unfortunately,  have tightened up a lot on your ability to do this now) and Github. It also offers some explanation of Natural Language Processing (NLP) in Chapter 5. I was disappointed the book only stopped at gathering data for the most part and didn't do much else with it (no recommendation engines or machine learning applications). The book is also starting to show some age, unfortunately (which isn't the author's fault of course). It is written entirely in Python, but it uses Python 2 instead of 3. The best chapter is probably the last one, called the "Twitter Cookbook", which gives a bunch of useful code samples for extracting data using Twitter's API, although there is a chance some of it is out of date. I wanted to like this book but I felt like it was missing something. If you need to extract a lot of social network data for an upcoming project, this book might be worth checking out.
 
 ### Advanced Analytics with Spark by [Sandy Ryza, Uri Laserson, Sean Owen, and Josh Wills](http://www.amazon.com/Advanced-Analytics-Spark-Patterns-Learning/dp/1491912766/ref=sr_1_1?ie=UTF8&qid=1433013688&sr=8-1&keywords=advanced+analytics+with+spark) <font color = 'orange'>(moderate)</font>
 
 <!---
 <img src = "/images/AA_spark.gif" align = right>
 -->
-![](/images/AA_spark.gif){:align="right"}
+![](/images/AA_spark.gif){:align="right" width="128px" height="168px"}
 This book comes from the top data scientists at Cloudera and shows you how to use Spark for typical data science applications. Although Spark is available to use with a Python library (PySpark), the authors prefer to demonstrate the book in Scala for the most part, since Spark is written in this. The book is excellent, allowing you to learn both Spark and Scala at the same time! I agree with the authors that you do not need to read every chapter (if you only can read one, Chapter 2 is definitely the best!), as the book is structured across use cases from multiple industries. I have learned more about Spark from this book than I have in my own study from the official Spark docs or several local Meetups I have been to. A little surprising, the book assumes very limited prior knowledge of machine learning, so you may be able to skip some of the material explaining how various machine learning algorithms work. Regardless, even though the book seems a tad thin, it really is incredibly useful. One caveat, however, is that the book was written with Spark 1.2 in mind, so the newest major changes (such as data frames from 1.3) are not discussed. That being said, if you plan to use Spark on any of your projects, read this first. 
 
 
@@ -34,7 +67,7 @@ This book comes from the top data scientists at Cloudera and shows you how to us
 <!---
 <img src = "/images/Hadoop_book.jpg" align = right>
 -->
-![](/images/Hadoop_book.jpg){:align="right"}
+![](/images/Hadoop_book.jpg){:align="right" width="128px" height="168px"}
 This review is for the older 3rd edition of the book. The newer, [4th edition](http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1491901632/ref=sr_1_1?ie=UTF8&qid=1433014408&sr=8-1&keywords=hadoop+the+definitive+guide+4th+edition) includes Spark (which the 3rd edition does not, sadly, because Spark hadn't been released yet) along with several other updates. In my opinion, the book provides a lot of great case examples for when the HDFS should be used and how to optimize it properly. Because of the very fast pace of development in the Hadoop ecosystem, a lot of the 3rd edition now feels behind (hence the new 4th edition). That being said, the chapters on Pig and Hive (which aren't going anywhere) were very helpful, along with information about actual use cases at several companies such as Facebook, Infochimps, and last.fm. The book is probably a better fit for a data engineer than a data scientist, but data scientists still need to understand some of the Hadoop system's strengths and weaknesses. If you have some question about almost anything involving Hadoop, go here first if Google/StackOverflow doesn't get you an answer.  
 
 ### Predictive Analytics by [Eric Siegel](http://www.amazon.com/Predictive-Analytics-Power-Predict-Click-ebook/dp/B00BGC2WGQ) <font color = 'green'>(beginner)</font> 
