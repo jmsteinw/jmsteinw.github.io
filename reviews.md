@@ -113,7 +113,7 @@ This gives advice from the data science team at BAH on how they like to approach
 <!---
 <img src = "/images/ESL_Book.jpg" align = right width = 128 height = 168>
 -->
-![](/images/ESL_book.jpg){:align="right" width="128px" height="168px"}
+![](/images/ESL_Book.jpg){:align="right" width="128px" height="168px"}
 Anyone who is a really hard-core data scientist should have read this book. It describes all of the mathematics and minute details for almost every major supervised and unsupervised machine learning or statistical algorithm there is. It's not enough to just use these algorithms in R, Mahout, or scikit-learn and go on your merry way. To use them properly, it is important to understand how they really work and what the internals look like. Yes, it is a challenging book to read. There is a lot of advanced mathematics in it, and it is very long (over 700 pages!). If you don't have a strong math background, it will be intimidating to you. Tough. Read it anyway, all of it! If it makes you feel any better, the authors themselves (who are brilliant!) have realized the book is very technical and have added a little icon of a yellow man with hands in the air to mark sections they feel are really difficult. The authors claim you can skip these sections if you wish, but I would try to read them regardless. It is truly considered a classic for many data scientists and machine learning experts.
 
 
