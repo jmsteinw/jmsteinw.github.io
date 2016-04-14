@@ -3,8 +3,10 @@ layout: post
 title: An Introduction to Deep Learning using nolearn
 ---
 
-
+<!---
 <img src='/images/Proj3_images/Deep_Learning.jpg', width = 1000, height = 400>
+-->
+![](/images/Proj3_images/Deep_Learning.jpg){:width="1000px" height="400px"}
 [Source](http://www.purdue.edu/newsroom/releases/2014/Q1/smartphone-to-become-smarter-with-deep-learning-innovation.html)
 
 **NOTE: If you are having trouble with nolearn working properly, make sure you are using version 0.5b1 available [here](https://pypi.python.org/pypi/nolearn/0.5b1).** Otherwise you may run into problems. 
@@ -66,6 +68,7 @@ Now, let's run our function to split the data and scale it.
 ```python
 x_train, x_test, y_train, y_test = train_test_prep()
 ```
+
 ## Creating A Deep Belief Network
 
 Given that we now have train/test data, let's try making a simple deep belief network and get a baseline error rate to start with.

@@ -3,7 +3,10 @@ layout: post
 title: Exploring and Predicting University Faculty Salaries
 ---
 
+<!---
 <img src='/images/Proj4_images/Penn_State.jpg' width = 800, height = 600>
+-->
+![](/images/Proj4_images/Penn_State.jpg){:width="800px" height="600px"}
 [Source](http://de.wikipedia.org/wiki/Pennsylvania_State_University)
 
 Although data about faculty salaries at private universities can be difficult to find, getting data regarding faculty salaries at public universities is much easier. I've always been curious (even though I don't want to go into academia myself!) which fields pay the best and why and if there is a way to predict your salary if you are going to be a professor at a certain university. 
@@ -787,6 +790,7 @@ lookupFrame <- unique(lookupFrame) # Get the unique values only
 write.csv(lookupFrame, 'DeptLookup.csv') # save it
 write.csv(numericDB, 'FinalSalaryFrame.csv') # save our numeric frame
 ```
+
 ## EDA Summary and Conclusions
 
 We have obtained an external data source, cleaned it up, transformed the data, added new features, and did some exploration of the data. Believe it or not, this work actually ends up taking most of a Data Scientist's time! It is very important, as good features make machine learning algorithms work far better than which model you end up choosing, so it is a step that is worth the time investment. 
@@ -1122,7 +1126,7 @@ No, Random Forests didn't improve our mean absolute error. We need to stick to t
 
 Now that we know which model works the best, it would be nice to create a function that allows us to try different input combinations for the model. We will work on this in the next segment.
 
-##Function Implementation
+## Function Implementation
 
 We are now going to create a function to output the results of our model for any combination of parameters we choose. The function will request inputs of race, years of experience, rank (assistant, associate, full), sex, and the department. 
 
@@ -1274,7 +1278,7 @@ Our predicted salary is less than in the Meteorology department, which we would 
 
 I found through trial and error that the predictions tend to be less accurate for younger professors (at least comparing to the examples in the database) than for older, more established ones. This is because there are fewer young professors the model can train on, so you have to treat these salary predictions more skeptically. 
 
-##Ideas for Improvement and Summary
+## Ideas for Improvement and Summary
 
 In this post, we took an interesting external dataset and explored it in detail. A fair amount of work was necessary to engineer our features, but we were able to use them afterwards for exploratory data analysis purposes in R. We shaped the data using plyr and visualized it using ggplot2. 
 

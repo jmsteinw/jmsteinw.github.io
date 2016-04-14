@@ -5,7 +5,13 @@ title: Web Scraping Indeed for Key Data Science Job Skills
 
 As many of you probably know, being a data scientist requires a large skill set . . .
 
+<!---
 <img src="/images/Proj6_images/DSMap.png" width = 800 height = 600>
+# I am commenting this out because this was the old one.
+-->
+
+![](/images/Proj6_images/DSMap.png){:height="600px" width="800px"}
+
 Credit: [Swami Chandrasekaran](http://nirvacana.com/thoughts/becoming-a-data-scientist/)
 
 To master all of that at a high level would probably take a lifetime! I'm sure many data scientists would love to be highly skilled in all of these areas if possible, but busy Ph.D. students like me (that are trying to graduate in an efficient manner!) don't have enough time to focus on all of these skills.
@@ -22,7 +28,7 @@ Luckily, Greg Reda at Datascope Analytics had a great blog post about web scrapi
 
 So, in this post, I am going to scrape job postings from Indeed.com for data science jobs and see which skills employers want the most (Python or R? Are they interested in Spark yet? How dominant are NoSQL databases? Are they using proprietary software like SAS or are companies preferring open source now?) To make it even better, I will create the program so that I can have a detailed breakdown by city. 
 
-##Program Setup
+## Program Setup
 
 The basic workflow of the program will be:
 
@@ -154,7 +160,7 @@ sample[:20] # Just show the first 20 words
 
 Now that we can extract terms from the website with our text_cleaner function, let's build another function that will call this and automatically loop through all of the websites on Indeed for us.
 
-##The Second Function: Accessing the Job Postings
+## The Second Function: Accessing the Job Postings
 
 This next function will allow us to search for "data scientist" jobs in a particular city (or nationally if we want to see everything!) and plot the final results in a bar chart so we can see which skills are most frequently desired. 
 
@@ -323,10 +329,13 @@ Done with collecting the job postings!
 There were 74 jobs successfully found.
 ```
 
-
+<!---
 <img src="/images/Proj6_images/proj6_nb_16_1.png" width = 600 height = 450>
+comment out the bad image portion
+-->
 
-
+![](/images/Proj6_images/proj6_nb_16_1.png){:width="600px" height="450px"}
+ 
 Looking at the plot above, it seems Python is definitely the most commonly requested skill. Relational databases are used far more commonly than unstructured NoSQL databases. Spark doesn't seem to have caught on to very many jobs yet (only about 7%) but it is listed more frequently than Pig, which has been around much longer! It also seems R is starting to lose the infamous Python vs. R battle that data scientists like arguing about (in my opinion just use both for their strengths!) 
 
 What if we tried a different job market, such as Chicago? How do things change here?
@@ -346,9 +355,12 @@ Done with collecting the job postings!
 There were 68 jobs successfully found.
 ```
 
-
+<!---
 <img src="/images/Proj6_images/proj6_nb_18_1.png" width = 600 height = 450>
+# Comment out defective version
+-->
 
+![](/images/Proj6_images/proj6_nb_18_1.png){:width="600px" height="450px"}
 
 In the case of Chicago, it seems Hadoop is the top skill to have. My guess is some of the companies list Hadoop without really understanding that Hadoop is an entire framework and not a specific "skill." Python has now dropped to third place compared to Seattle. It also seems Spark appears in a greater percentage of job ads from Chicago than it did in Seattle, but Pig is requested more often. 
 
@@ -367,9 +379,11 @@ Done with collecting the job postings!
 There were 336 jobs successfully found.
 ```
 
-
+<!---
 <img src="/images/Proj6_images/proj6_nb_20_1.png" width = 600 height = 450>
+-->
 
+![](/images/Proj6_images/proj6_nb_20_1.png){:width="600px" height="450px"}
 
 Once again, Python is the top skill demanded, with R in second. In terms of the Hadoop framework, Hive was the most in demand. This makes sense given most companies are still dealing with structured data and Hive's strong similarity to SQL. Spark also beat Excel (thank goodness!) yet the percentage of job descriptions mentioning Spark was smaller in the Bay Area than in Chicago. A bit surprising since Spark originated at Berkeley, but this is just a snapshot in time after all. 
 
@@ -387,8 +401,11 @@ Done with collecting the job postings!
 There were 335 jobs successfully found.
 ```
 
-
+<!---
 <img src="/images/Proj6_images/proj6_nb_22_1.png" width = 600 height = 450>
+-->
+
+![](/images/Proj6_images/proj6_nb_22_1.png){:width="600px" height="450px"}
 
 
 New York City and San Francisco had almost exactly the same number of job postings, which seems to show the job market is relatively balanced between the two coasts. R **finally** comes in first place in the Big Apple, with Python close behind. Demand for Spark seems pretty limited still, however. I think Spark has a bright future, so this may change by the end of the year. 
@@ -400,9 +417,11 @@ national_info[0]
 ```
 
 
-
+<!---
 <img src="/images/Proj6_images/proj6_nb_24_0.png" width = 600 height = 450>
+-->
 
+![](/images/Proj6_images/proj6_nb_24_0.png){:width="600px" height="450px"}
 
 
 From a national standpoint, I notice a few interesting things:
@@ -413,7 +432,7 @@ From a national standpoint, I notice a few interesting things:
 
 - Even nationally, Spark is now (at least for this snapshot in time) a more in-demand skill than Excel. Perhaps companies are starting to realize that Excel isn't exactly the best tool for data science at scale (sorry Microsoft!) and is better suited for a Data Analyst role. 
 
-##Summary
+## Summary
 
 Designing our own web crawler, we were able to find out which skills companies are most interested in for data science jobs on Indeed. Trends vary somewhat between cities, but the top four skills were Python, R, SQL, and Hadoop pretty consistently. Java, SAS, and Hive would probably be considered the second tier.
 

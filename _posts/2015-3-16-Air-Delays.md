@@ -2,8 +2,10 @@
 layout: post
 title: Predicting Airline Delays
 ---
-
+<!---
 <img src='/images/Proj5_images/Delays.jpg', width = 800, height = 600>
+-->
+![](/images/Proj5_images/Delays.jpg){:width="800px" height="600px"}
 [Source](http://mashable.com/2014/10/09/airline-delays-increase/)
 
 I don't know about all of you, but flying doesn't always go smoothly for me. I have had some horror stories I could tell you about weird delays I have encountered while flying. Wouldn't it be nice to know how much your flight will probably be delayed and why?
@@ -14,7 +16,7 @@ To complete this project, we need some data about flights. Fortunately, the gove
 
 Similar to the project about faculty salaries, this post will be split into two major parts: exploratory data analysis and feature engineering in R, with regression model implementation in Python. 
 
-##Getting the Data
+## Getting the Data
 
 For this project, the best place to get data about airlines is from the US Department of Transportation, [here](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236). There are several options available for what data you can choose and which features. For this project, I chose the following features:
 
@@ -156,7 +158,7 @@ Max.   :1983.000   Max.   :675.0    Max.   :4983
 
 Looks like we are okay for missing values. Now that we have loaded our data and cleaned it a little bit, let's do some feature engineering.
 
-##Creating a New Feature: Number of Days to Holiday
+## Creating a New Feature: Number of Days to Holiday
 
 This feature was actually included in the Hortonworks example I linked to previously, and I thought it was a good idea. It makes intuitive sense that airlines are probably going to be under stress near holidays, so this feature could probably be a decent predictor of a late flight. 
 
@@ -288,7 +290,7 @@ flightsDB$DEP_HOUR <- trunc(flightsDB$CRS_DEP_TIME/100)
 ```
 Now that our feature engineering is finished, let's do some EDA (exploratory data analysis). 
 
-##Exploratory Data Analysis
+## Exploratory Data Analysis
 
 For this section, we are going to use the more recent library [dplyr](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html), which comes from Dr. Hadley Wickham's great collection of R libraries and was just released last year in early 2014 for the first time. It's an upgrade from the older plyr in several ways. Using dplyr with ggplot2 makes this part of data science, at least in my opinion, even faster and easier than ever before.
 
@@ -581,7 +583,7 @@ write.csv(numericDB, 'FinalFlightsNumeric.csv')
 ```
 We are now finished with R. In the next part of the post, we will create an algorithm that will predict how late (or early) our flight will be using Python. 
 
-##Part 2: Regression Model to Predict Flight Delays
+## Part 2: Regression Model to Predict Flight Delays
 
 Now that we have explored the data some, let's create our regression model to predict how late a flight is going to be. First, load two datasets: the airport text file that has the codes for each of the airports and the numeric dataset we just created in R. 
 
@@ -871,7 +873,7 @@ x_test[:, 0:2] = x_test_numerical
 
 Now that we have our training/test sets ready, scaled, and one-hot encoded, we can start training our regression model.
 
-##Training The Model
+## Training The Model
 
 As mentioned earlier, we need a regression model that can scale to nearly 6 million training examples. Scikit-learn has just the model for us in this kind of situation: [the SGD (or Stochastic Gradient Descent) regressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html). It can accept sparse matrices and is recommended for greater than 10,000 training examples. 
 
@@ -922,7 +924,7 @@ Well, a mean absolute error of 21 minutes isn't wonderful performance, but it ma
 
 However, it at least will allow us to get a rough idea of how late our flight will be. Let's start implementing this model so we can use it to predict a flight's delay. 
 
-##Function Implementation
+## Function Implementation
 
 Now that we have our regression model trained and ready, it's time to design a function that utilizes it. 
 
@@ -1135,7 +1137,7 @@ Your predicted delay is 16 minutes.
 
 It did seem to help some, yes! 
 
-##Ideas for Improvement and Summary
+## Ideas for Improvement and Summary
 
 In this post, we took data from the Department of Transportation regarding flight on-time performance. We did some feature engineering and made functions in R that allowed us to easily explore the data. Then, we prepared our data for a SGD Regressor model via feature scaling/one-hot encoding and made a function that could predict how late our flight was going to be. This project was a bit more difficult than the faculty salary project because the dataset was much larger, so we had to consider model solutions that would be computationally feasible. 
 

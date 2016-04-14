@@ -3,8 +3,10 @@ layout: post
 title: Natural Language Processing in a Kaggle Competition for Movie Reviews
 ---
 
-
+<!---
 <img src='/images/Proj2_images/Movie_thtr.jpg', width = 800, height = 600>
+-->
+![](/images/Proj2_images/Movie_thtr.jpg){:width="800px" height="600px"}
 [Source](http://imgkid.com/movie-theater-wallpaper.shtml)
 
 I decided to try playing around with a Kaggle competition. In this case, I entered the ["When bag of words meets bags of popcorn"](http://www.kaggle.com/c/word2vec-nlp-tutorial) contest. This contest isn't for money; it is just a way to learn about various machine learning approaches. 
@@ -75,6 +77,7 @@ for i in xrange(0,len(train['review'])):
     for i in xrange(0,len(test['review'])):
         testdata.append(" ".join(review_to_wordlist(test['review'][i])))
 ```
+
 ## TF-IDF Vectorization
 
 The next thing we are going to do is make TF-IDF (term frequency-interdocument frequency) vectors of our reviews. In case you are not familiar with what this is doing, essentially we are going to evaluate how often a certain term occurs in a review, but normalize this somewhat by how many reviews a certain term also occurs in. [Wikipedia](http://en.wikipedia.org/wiki/Tf%E2%80%93idf) has an explanation that is sufficient if you want further information. 
