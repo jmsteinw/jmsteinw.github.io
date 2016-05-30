@@ -14,6 +14,7 @@ As many of you probably know, being a data scientist requires a large skill set 
 
 Credit: [Swami Chandrasekaran](http://nirvacana.com/thoughts/becoming-a-data-scientist/)
 
+
 To master all of that at a high level would probably take a lifetime! I'm sure many data scientists would love to be highly skilled in all of these areas if possible, but busy Ph.D. students like me (that are trying to graduate in an efficient manner!) don't have enough time to focus on all of these skills.
 
 So which of these skills are most employers actually looking for? 
