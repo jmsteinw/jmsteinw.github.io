@@ -8,16 +8,18 @@ In my quest to further my knowledge of Data Science, I have read several books. 
 
 
 
-### Currently reading:
+### Scala for Data Science by [Pascal Bugnion](https://www.amazon.com/Scala-Data-Science-Pascal-Bugnion/dp/1785281372) <font color = 'orange'>(moderate)</font>
 
+![](/images/Scala_DS.jpg){:align="right" width="128px" height="168px"}
 
-### Programming Scala (2nd edition) by [Dean Wampler & Alex Payne](http://www.amazon.com/Programming-Scala-Scalability-Functional-Objects/dp/1491949856) <font color = 'red'>(difficult)</font>
+I have been waiting for a book like this one for quite some time. While other books focus more on Spark specifically, this book focuses primarily on other libraries available in Scala that could prove useful for your workflow. While not much attention is paid to machine learning (there is some in Chapter 12), the book focuses more on Scala’s strengths such as immutability, futures, and type safety. There is also a lot of focus on how to interact with databases. The author essentially argues that Scala’s best use is for permanent programs instead of exploration and experimentation. This book will definitely come in handy if you want to translate your model into production code that requires scale.
 
-![](/images/Prog_Scala.gif){:align="right" width="128px" height="168px"}
+### Amazon Web Services in Action by [Andreas Wittig and Michael Wittig](https://www.amazon.com/Amazon-Services-Action-Andreas-Wittig/dp/1617292885) <font color = 'orange'>(moderate)</font>
 
-If you need to know every detail about how Scala is programmed, this is a good book to start with. It's definitely not a book for beginners to programming, and it assumes you are a veteran software developer. However, it does a very thorough introduction to the language and has something for both new and experienced Scala developers alike. Since Spark is written in Scala, it may be good to know how the language works in more detail and how it differs from other similar languages such as Java. 
+![](/images/AWS_action.jpg){:align="right" width="128px" height="168px"}
 
-### Already Read:
+The myriad of possible features available from Amazon Web Services (AWS) can be a tad intimidating to understand. I decided what I really wanted was a guide to teach me how to use these services from experienced professionals. Fortunately, we now have this book! Geared more towards DevOps Engineers than Data Scientists, the book still was a welcome help for me. All of the major aspects of AWS are covered (although Redshift is not even mentioned in the book, which I found quite surprising!) along with examples of how to configure them in great detail. Web applications, security, load balancing, databases, and flexible computing resources are all covered. I feel much more confident that I could use AWS with greater ease than before. The Wittig brothers really know their stuff. If you want to start using AWS more in your work, definitely keep this book handy.
+
 
 ### Doing Data Science by [Cathy O'Neill & Rachel Schutt](http://www.amazon.com/Doing-Data-Science-Straight-Frontline/dp/1449358659) <font color = 'green'>(beginner)</font>
 
