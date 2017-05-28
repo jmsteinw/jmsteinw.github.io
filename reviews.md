@@ -7,6 +7,12 @@ permalink: /books/
 In my quest to further my knowledge of Data Science, I have read several books. If you are considering buying any of these, this list may be of help! I have included a subjective ranking as to how complex the material in the book is so you can decide if a book is suited to your level of experience.
 
 
+### Recommender Systems: The Textbook by [Charu C. Aggarwal](https://www.amazon.com/Recommender-Systems-Textbook-Charu-Aggarwal/dp/3319296574) <font color = 'red'>(difficult)</font>
+
+![](/images/rec_systems_book.jpg){:align="right" width="128px" height="168px"}
+
+I feel most sources regarding recommender systems do not explain them very well or only talk about them briefly. Finally, there is an entire book dedicated just to them. I absolutely loved this book! It is incredibly well written and does an excellent job of explaining recommender systems. Several topics are covered, including collaborative filtering with neighborhood and latent factor models, content-based systems, hybrid systems, knowledge-based systems, and many more. The author really went out of his way to carefully explain all of them with practical examples and detailed literature reviews. If you are planning on building a recommender system, I would honestly start here first. The internet just has very poor resources on this topic in general, so this book will be a lifesaver for you! The earlier chapters will be very helpful in catching beginners up to speed, while the later chapters help you delve into more complicated systems.  
+
 
 ### Scala for Data Science by [Pascal Bugnion](https://www.amazon.com/Scala-Data-Science-Pascal-Bugnion/dp/1785281372) <font color = 'orange'>(moderate)</font>
 
