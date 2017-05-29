@@ -621,7 +621,7 @@ def implicit_weighted_ALS(training_set, lambda_val = 0.1, alpha = 40, iterations
             conf_samp = conf[:,i].T.toarray() # transpose to get it in row format and convert to dense
             pref = conf_samp.copy()
             pref[pref != 0] = 1 # Create binarized preference vector
-            CiI = sparse.diags(conf_samp, [0]) # Get Ci - I term, don't need to subtract I since we never added 1
+            CiI = sparse.diags(conf_samp, [0]) # Get Ci - I term, don't need to subtract 1 since we never added it
             xTCiIX = X.T.dot(CiI).dot(X) # This is the xT(Cu-I)X term
             xTCiPi = X.T.dot(CiI + X_eye).dot(pref.T) # This is the xTCiPi term
             Y[i] = spsolve(xTx + xTCiIX + lambda_eye, xTCiPi)
