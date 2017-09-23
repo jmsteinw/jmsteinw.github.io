@@ -6,6 +6,12 @@ permalink: /books/
 
 In my quest to further my knowledge of Data Science, I have read several books. If you are considering buying any of these, this list may be of help! I have included a subjective ranking as to how complex the material in the book is so you can decide if a book is suited to your level of experience.
 
+### Deep Learning by [Ian Goodfellow, Yoshua Bengio, and Aaron Courville](http://www.deeplearningbook.org/) <font color = 'red'>(difficult)</font>
+
+![](/images/deep_learning_book.jpg){:align="right" widgth="128px" height="168px"}
+
+I've been waiting for a book specifically on deep learning to help summarize all of the research and progress on the subject that has been done recently. Thankfully this book is it. The book is divided up into three sections. The first section is a good summary/refresher on basics of linear algebra, probability, and machine learning. If you are more experienced with machine learning you can skip it, but for those of you that are newer to machine learning, this is a very good starting point. The second section is definitely the must-read portion, since it covers the alphabet soup of the most popular deep learning algorithms (CNN, RNN, LSTM, etc.) It gives great advice on how to tune and debug these networks in Chapter 11 that I found helpful in my own work. Section 3 focuses more on unsupervised learning problems and research questions, so it's probably a more helpful section for those in academia than in industry. I personally found I understood deep learning far better after finishing the book, and it has been of great help for my own projects. Given that the electronic version is completely free, it's definitely worth reading if you have an interest in deep learning.
+
 
 ### Recommender Systems: The Textbook by [Charu C. Aggarwal](https://www.amazon.com/Recommender-Systems-Textbook-Charu-Aggarwal/dp/3319296574) <font color = 'red'>(difficult)</font>
 
