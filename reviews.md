@@ -155,7 +155,7 @@ I have found a couple of books that you can get for free. I highly recommend bot
 ![](/images/FGuide_Book.jpg){:align="right" width="128px" height="168px"}
 This gives advice from the data science team at BAH on how they like to approach problems. It is very colorful and well organized. The contents span a variety of subjects, such as hiring data science teams, what algorithms work best in certain situations, and case studies from problems they actually had to solve. It gives a great insight into how data scientists think.
 
-### Elements of Statistical Learning by [Hastie, Tibshirani, and Friedman](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
+### Elements of Statistical Learning by [Hastie, Tibshirani, and Friedman](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 <font color = 'purple'>(brace yourself . . .)</font>
 <!---
 <img src = "/images/ESL_Book.jpg" align = right width = 128 height = 168>
